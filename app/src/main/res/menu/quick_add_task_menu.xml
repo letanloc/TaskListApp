@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_done"
+        android:title="@string/mark_as_completed"
+        android:icon="@drawable/action_bar_checkbox"
+        android:orderInCategory="0"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_important"
+        android:title="@string/mark_as_urgent"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:orderInCategory="1"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_set_date"
+        android:title="@string/set_due_date_time"
+        android:icon="@drawable/ic_calendar_clock"
+        android:orderInCategory="2"
+        app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Use when task list is sorted by due date -->
+<!-- There will be date headers -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true">
+
+    <ImageView
+        android:id="@+id/important_marker"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:src="@android:drawable/stat_sys_warning"
+        android:layout_marginRight="8dp"/>
+    <TextView
+        android:id="@+id/task_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/important_marker"
+        android:text="This is my task"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/important_marker"
+        android:layout_below="@id/task_name"
+        android:text="6:30 PM"/>
+    <Space
+        android:id="@+id/space"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/task_name"
+        android:layout_toRightOf="@id/time"/>
+    <TextView
+        android:id="@+id/task_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/space"
+        android:layout_below="@id/task_name"
+        android:text="Task List"/>
+</RelativeLayout>

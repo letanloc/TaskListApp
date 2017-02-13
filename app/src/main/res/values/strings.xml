@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Progress</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- CreateEditTaskFragment -->
+    <string name="save">SAVE</string>
+    <string name="delete">Delete</string>
+    <string name="mark_as_urgent">Mark as urgent</string>
+    <string name="hint_create_task_edittext">What\'s your task?</string>
+    <string name="due_date_time">Due date &amp; time</string>
+    <string name="task_list">Task list</string>
+    <string name="mark_as_completed">Mark as completed</string>
+    <string name="title_activity_create_edit_task">CreateEditTaskActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edit">Edit</string>
+    <string name="title_activity_task_overview">TaskOverviewActivity</string>
+    <string name="due_date">Due date</string>
+    <string name="set_time">Set time</string>
+    <string name="statistics">Statistics</string>
+    <string name="history">History</string>
+    <string name="title_activity_history">HistoryActivity</string>
+    <string name="switch_urgent">Switch urgent</string>
+    <string name="add">Add</string>
+    <string name="title_activity_task">TaskActivity</string>
+    <string name="automatic_timing">Automatic timing</string>
+    <string name="set_due_date_time">Set due date &amp; time</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="assign_to_task_list">Assign to task list</string>
+    <string name="open_full_window">Open in full window</string>
+    <string name="hint_default_time">12:00 AM (default)</string>
+
+    <string name="all_tasks_marked_completed">All following tasks will be marked completed</string>
+    <string name="all_tasks_marked_important">All following tasks will be marked important</string>
+    <string name="all_tasks_due_datetime_set">Due date set for all following tasks</string>
+    <string name="all_tasks_list_set">Task list set for all following tasks</string>
+    <string name="hint_quick_add_task">Quick add a task</string>
+
+    <string name="pick_task_list">Pick task list</string>
+
+    <string name="all">All</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="this_week">This Week</string>
+    <string name="important">Important</string>
+    <string name="completed">Completed</string>
+    <string name="new_task_list">New task list</string>
+    <string name="discard_changes">Do you want to discard the changes?</string>
+    <string name="confirm_delete">Confirm delete?</string>
+    <string name="delete_list">Delete task list</string>
+    <string name="edit_list">Edit task list</string>
+    <string name="sort">Sort</string>
+    <string name="by_due_date">By due date</string>
+    <string name="by_importance">By importance</string>
+    <string name="by_name">By name</string>
+    <string name="hint_description">Description (optional)</string>
+    <string-array name="action_item_type_spinner">
+        <item>Work for</item>
+        <item>Do by</item>
+    </string-array>
+    <string name="hint_starting_on">Starting on</string>
+    <string name="hint_ending_on">Ending on</string>
+    <string name="display_countdown_timer_screen">Display countdown timer screen for scheduled work intervals</string>
+    <string name="new_action_item">New action item</string>
+    <string name="edit_action_item">Edit action item</string>
+    <string name="hint_task">Task</string>
+    <string name="set_start_on">Set start on</string>
+    <string name="set_end_on">Set end on</string>
+    <string name="hint_no_due_date">No due date</string>
+    <string name="ascending">Ascending</string>
+    <string name="descending">Descending</string>
+    <string name="action_items">Action Items</string>
+    <string name="hint_select_list">Select task list</string>
+    <string name="title_activity_task_list">TaskListActivity</string>
+    <string name="title_activity_edit_task">EditTaskActivity</string>
+    <string name="mark_important">Mark important</string>
+    <string name="mark_done">Mark done</string>
+    <string name="changes_not_saved">You haven\'t saved your changes!</string>
+    <string name="title_activity_action_items">ActionItemsActivity</string>
+    <string name="title_activity_edit_action_item">EditActionItemActivity</string>
+    <string name="message_zero_duration_work_interval_exists">
+        A work interval in your schedule appears to have a duration of zero,
+        or the starting and ending dates were not specified. If you proceed, the work interval will be deleted.
+        Any other changes you\'ve made will be saved.
+    </string>
+    <string name="title_zero_duration_work_interval_exists">Work interval has invalid duration</string>
+    <string name="proceed">Proceed</string>
+    <string name="title_activity_detailed_history">DetailedHistoryActivity</string>
+    <string name="by_date_created">By date created</string>
+    <string name="completed_tasks">Completed tasks</string>
+    <string-array name="edit_task_spinner">
+        <item>Schedule</item>
+        <item>History</item>
+    </string-array>
+    <string name="title_activity_first">FirstActivity</string>
+    <string-array name="history_view_options">
+        <item>List, reverse chronological order</item>
+        <item>List, chronological order</item>
+        <item>Day</item>
+        <item>Week</item>
+    </string-array>
+</resources>

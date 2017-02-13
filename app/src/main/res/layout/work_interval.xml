@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Work for"
+            android:textSize="18sp"/>
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/decrement_hr"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="-"/>
+
+        <TextView
+            android:id="@+id/hr"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0h"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/increment_hr"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="+"/>
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/decrement_min"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="-"/>
+
+        <TextView
+            android:id="@+id/min"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="00m"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/increment_min"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="+"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <EditText
+                android:id="@+id/start_on"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/hint_starting_on"
+                android:focusableInTouchMode="false"
+                android:cursorVisible="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Space
+            android:layout_width="24dp"
+            android:layout_height="match_parent"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <EditText
+                android:id="@+id/end_on"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/hint_ending_on"
+                android:focusableInTouchMode="false"
+                android:cursorVisible="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="?attr/colorPrimary">
+
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:background="?android:selectableItemBackground"
+            android:src="@android:drawable/ic_menu_delete"/>
+
+        <ImageButton
+            android:id="@+id/save"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:background="?android:selectableItemBackground"
+            android:src="@android:drawable/checkbox_on_background"/>
+
+    </android.support.v7.widget.Toolbar>
+
+</merge>

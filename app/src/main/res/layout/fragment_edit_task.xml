@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edit_task"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:hint="Task"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <EditText
+                android:id="@+id/edit_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Spinner.DropDown"
+                android:text="Default Task List"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp"
+                android:focusableInTouchMode="false"
+                android:drawableLeft="@android:drawable/radiobutton_off_background"
+                android:drawablePadding="8dp"
+                android:hint="@string/hint_task"/>
+
+            <EditText
+                android:id="@+id/edit_due_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Spinner.DropDown"
+                android:hint="@string/hint_no_due_date"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp"
+                android:focusableInTouchMode="false"
+                android:drawableLeft="@android:drawable/radiobutton_off_background"
+                android:drawablePadding="8dp"/>
+
+        </LinearLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimaryDark"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        android:src="@android:drawable/ic_input_add"
+        android:layout_gravity="right|end|bottom"
+        app:layout_behavior="com.gmail.philliphsudev.progress.FabTimerButtonBehavior"/>
+
+    <Button
+        android:id="@+id/timing_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start timing"
+        android:layout_gravity="bottom"
+        app:layout_behavior="com.gmail.philliphsudev.progress.TimerButtonBehavior"/>
+
+</android.support.design.widget.CoordinatorLayout>

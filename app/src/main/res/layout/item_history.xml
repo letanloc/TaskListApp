@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+    <TextView
+        android:id="@+id/date_stamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:text="June 3, 2015"/>
+
+    <TextView
+        android:id="@+id/time_stamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_stamp"
+        android:text="3:00 PM - 7:45 PM"/>
+
+    <ImageView
+        android:id="@+id/comment_marker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/date_stamp"
+        android:layout_marginRight="4dp"
+        android:src="@android:drawable/checkbox_off_background"/>
+    <ImageView
+        android:id="@+id/rating_marker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/comment_marker"
+        android:src="@android:drawable/checkbox_off_background"/>
+
+
+</RelativeLayout>

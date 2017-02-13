@@ -1,0 +1,57 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.gmail.philliphsudev.progress.fragments.TaskListFragment">
+    <item android:id="@+id/action_sort"
+        android:title="@string/sort"
+        android:orderInCategory="0"
+        app:showAsAction="never">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/by_due_date"
+                    android:title="@string/by_due_date"
+                    android:orderInCategory="0"
+                    app:showAsAction="ifRoom"
+                    android:checked="true"/>
+                <item android:id="@+id/by_importance"
+                    android:title="@string/by_importance"
+                    android:orderInCategory="1"
+                    app:showAsAction="ifRoom"/>
+                <item android:id="@+id/by_name"
+                    android:title="@string/by_name"
+                    android:orderInCategory="2"
+                    app:showAsAction="ifRoom"/>
+                <item android:id="@+id/by_order_created"
+                      android:title="By order created"
+                      android:orderInCategory="3"
+                      app:showAsAction="ifRoom"/>
+                <item android:id="@+id/by_task_list"
+                      android:title="By task list"
+                      android:orderInCategory="4"
+                      app:showAsAction="ifRoom"/>
+                <item android:id="@+id/my_order"
+                      android:title="My order"
+                      android:orderInCategory="5"
+                      app:showAsAction="ifRoom"/>
+            </group>
+        </menu>
+    </item>
+    <item android:id="@+id/view_completed_tasks"
+          android:title="View completed tasks"
+          android:orderInCategory="1"
+          app:showAsAction="never"/>
+    <item android:id="@+id/action_go_back"
+          android:title="Go back"
+          android:orderInCategory="2"
+          app:showAsAction="never"
+          android:visible="false"/>
+    <item android:id="@+id/clear_completed_tasks"
+          android:title="Clear completed tasks"
+          android:orderInCategory="3"
+          app:showAsAction="never"
+          android:visible="false"/>
+    <item android:id="@+id/edit_task_list"
+        android:title="Edit task list"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>

@@ -190,6 +190,10 @@ public class Task implements Parcelable {
         mMyPosition = myPosition;
     }
 
+    public int indexInList() {
+        return -1;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o)

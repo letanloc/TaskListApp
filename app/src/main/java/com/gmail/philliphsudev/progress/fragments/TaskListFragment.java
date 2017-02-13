@@ -305,17 +305,16 @@ public class TaskListFragment extends Fragment {
         TaskList list = TaskListDb.getList(task.getTaskListIndex());
         if (mTaskList == list) {
             int at = list.replaceTask(lastPos, task);
+            if (lastPos != at) {
+                mTaskAdapter.notifyItemMoved(lastPos, at);
+            }
+            mTaskAdapter.notifyItemChanged(at);
         } else {
             int lastPosition = mTaskList.indexOf(task);
             mTaskList.deleteTask(lastPosition);
         }
         if (mTaskList instanceof PrimaryTaskList) {
             mTaskAdapter.notifyDataSetChanged();
-        } else if (mTaskList == list) {
-            if (lastPos != at) {
-                mTaskAdapter.notifyItemMoved(lastPos, at);
-            }
-            mTaskAdapter.notifyItemChanged(at);
         }
     }
 
